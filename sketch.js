@@ -1,7 +1,15 @@
+var spritesheet;
+
+function preload() {
+  spritesheet = loadImage('assets/frogger.png');
+
+}
+
 function setup() {
-  // put setup code here
+  createCanvas(spritesheet.width * 2, spritesheet.height);
 }
 
 function draw() {
-  // put drawing code here
+  background(0);
+  image(spritesheet, spritesheet.width, 0);
 }
